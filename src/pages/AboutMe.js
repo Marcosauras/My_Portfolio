@@ -1,21 +1,50 @@
-import React from "react";
 import Footer from "../components/Footer";
-import ProfileImage from "../assets/Profile picture.jpg"
+import ProfileImage from "../assets/ScreenshotOfMe2.0.png";
 
 function AboutMe() {
   return (
-    <div className="bg-gradient-to-b from-Dark_Blue via-Navy_Blue-500 to-Baby_Blue min-h-screen flex flex-col h-screen text-center">
-        <section className="flex-grow content-center">
-            <div className="rounded about-me-div my-24 p-4 m-8 grid md:grid-cols-2 place-items-center bg-night bg-opacity-50" id="about-me">
-                <div className="px-3 py-1 w-8/12 rounded-full content-center bg-gradient-to-l from-Dark_Blue to-Baby_Blue">
-                    <img className="profile content-center rounded-full" src={ProfileImage} alt ="Marc" />
-                </div>
-                <p className="about-me-p m-10 text-2xl">Hi, I'm Marc, a Sophomore at Oregon State University majoring in Applied Computer Science. I'm passionate about using my skills to help others and would love to apply my talents to make others safer.</p> 
-            </div>    
-        </section>
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-Dark_Blue via-Navy_Blue-500 to-Baby_Blue text-white">
+      <section className="flex-grow flex items-center justify-center px-6">
+        <div
+          id="about-me"
+          className="max-w-5xl w-full grid md:grid-cols-2 gap-10 
+                     bg-night/60 backdrop-blur-md
+                     rounded-3xl shadow-2xl
+                     p-10 border border-white/10"
+        >
+          {/* Profile Image */}
+          <div className="flex justify-center">
+            <div className="p-3 rounded-full bg-gradient-to-tr from-Baby_Blue to-Dark_Blue shadow-xl">
+              <img
+                className="w-80 h-80 md:w-96 md:h-96 object-cover rounded-full border-4 border-white/20"
+                src={ProfileImage}
+                alt="Marc Hamilton"
+              />
+            </div>
+          </div>
 
-        <Footer />
+          {/* Text Content */}
+          <div className="flex flex-col justify-center text-left space-y-6">
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+              About Me
+            </h1>
 
+            <p className="text-xl leading-relaxed text-white/90">
+              Hi, I’m Marc — a junior at Oregon State University majoring in
+              Applied Computer Science. I’m passionate about software
+              development, with an interest in web and game
+              development.
+            </p>
+
+            <p className="text-lg text-white/80">
+              I enjoy learning about new coding languages, understanding how
+              they work and making my ideas into reality
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
     </div>
   );
 }
