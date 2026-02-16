@@ -22,7 +22,7 @@
 # Description
 Here is my portfolio website, it has a show case of projects I am proud of and a little about me, I hope to continue updating it to show case everything I have completed.
 
-![Portfolio showcase](<img width="1146" height="916" alt="Screenshot 2026-02-15 200054" src="https://github.com/user-attachments/assets/2adf3489-2db9-4abe-91b2-6c6aa54215d5" />)
+![Portfolio showcase](src/assets/Marc's_Portfolio.png)
 
 
 [Back to Top](#table-of-contents)
